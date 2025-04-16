@@ -1,3 +1,4 @@
+package NumberToWords;
 import java.util.*;
 
 
@@ -11,15 +12,23 @@ public class NumberToWords {
         String teen[]={"","Eleven","tewlve","thirteen","fourteen","fifteen","Sixteen","Seventeen","Eighteen","Ninteen"};
         if(num==10){
             System.out.println("Ten");
+            return;
         }
         if(num==100){
             System.out.println("Hundred");
+            return;
         }
         if(num==0){
             System.out.println("Zero");
+            return;
         }
         if(num>10 && num<20){
             System.out.println(teen[num%10]);
+            return;
+        }
+        if(num==1000){
+            System.out.println("Thousand");
+            return;
         }
         if(num>1000){
             System.out.print(units[num/1000]+" Thousand");

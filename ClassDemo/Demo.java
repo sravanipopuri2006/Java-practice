@@ -1,3 +1,4 @@
+package ClassDemo;
 import java.util.*;
 class Demo{
     public static String Palindrome(int a){

@@ -1,3 +1,4 @@
+package SquareRootJava;
 import java.util.*;
 
 public class squareroot {

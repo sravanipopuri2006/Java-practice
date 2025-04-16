@@ -1,3 +1,4 @@
+package ClassDemo;
 public class ClassDemo {
     String Employee;
     int Salary;

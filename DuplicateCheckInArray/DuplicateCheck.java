@@ -1,3 +1,4 @@
+package DuplicateCheckInArray;
 import java.util.*;
 
 public class DuplicateCheck {

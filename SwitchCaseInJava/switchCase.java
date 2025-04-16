@@ -1,3 +1,4 @@
+package SwitchCaseInJava;
 import java.util.*;
 
 

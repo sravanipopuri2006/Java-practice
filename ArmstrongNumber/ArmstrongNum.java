@@ -1,3 +1,4 @@
+package ArmstrongNumber;
 import java.util.Scanner;
 
 public class ArmstrongNum {
