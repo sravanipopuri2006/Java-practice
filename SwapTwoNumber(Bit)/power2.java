@@ -1,4 +1,4 @@
-package powerOfTwo;
+
 import java.util.*;
 
 public class power2 {
