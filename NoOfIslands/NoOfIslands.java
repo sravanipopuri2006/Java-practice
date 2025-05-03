@@ -10,6 +10,9 @@ public class NoOfIslands {
         dfs(grid,i,j-1);
         dfs(grid, i+1, j);
         dfs(grid, i, j+1);
+        //Conditions if diagonal to be included as islands
+        dfs(grid,i-1,j-1);
+        dfs(grid,i+1,j+1);
 
     }
     private static int countIslands(int grid[][]){
@@ -26,7 +29,7 @@ public class NoOfIslands {
         return islands;
     }
     public static void main(String[] args) {
-        int grid[][]={{1,1,1,1},{1,0,0,1},{1,0,0,0}};
+        int grid[][]={{1,1,0,0,0},{1,1,0,0,0},{0,0,1,0,0},{0,0,0,1,1}};
         System.out.println("The No.of islands are: "+countIslands(grid));
     }
     
