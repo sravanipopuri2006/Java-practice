@@ -1,4 +1,5 @@
 package NQueens;
+import java.util.*;
 public class Nqueens {
     private static boolean isSafe(int row,int col,char board[][]){
       
@@ -48,39 +49,46 @@ public class Nqueens {
 
         return true;
 
-    }
+    } 
     public static void print(char[][]board){
         for(int i=0;i<board.length;i++){
             for(int j=0;j<board.length;j++){
                 System.out.print(board[i][j]);
             }
             System.out.println();
+            System.out.println();
         }
     }
     public static void solve(char board[][],int n,int row){
-        if(row==n){
+        if(row==n ){
             print(board);
             System.out.println();
-            
-            return;
         }
-        for(int j=0;j<n;j++){
-            if(isSafe(row,j,board)){
-                board[row][j]='Q';
-                solve(board, n, row+1);
-                board[row][j]='.';
-                
+        for (int j = 0; j < n; j++) {
+            if (isSafe(row, j, board)) {
+                board[row][j] = 'Q';
+                solve(board, n, row + 1);
+                board[row][j] = '.';
+
             }
+
         }
+        
+        
+        
+       
     }
     public static void main(String[] args) {
-        char board[][]=new char[4][4];
-        for(int i=0;i<4;i++){
-            for(int j=0;j<4;j++){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the n value: ");
+        int n=sc.nextInt();
+        char board[][]=new char[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
                 board[i][j]='.';
             }
         }
-        solve(board,4,0);
+        solve(board,n,0);
         
     }
     
