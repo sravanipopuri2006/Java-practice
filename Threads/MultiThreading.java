@@ -4,7 +4,7 @@ public class MultiThreading extends Thread {
         MultiThreading thread1=new MultiThreading();
         thread1.start();
         MultiThreading thread2=new MultiThreading();
-        thread2.start();;
+        thread2.start();
 
         
     }
